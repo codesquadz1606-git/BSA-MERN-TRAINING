@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+    <h5>Hello</h5>
+    <h6>Hello</h6>
+    <hr>
+    <!-- 
+        hr tag
+        br tag
+    -->
+
+    My name is Ayush <br>
+    I am MERN stack developer
+    <hr>
+    <!-- Media Tag : img tag , audio tag & video tag -->
+    
+    <h1>Media tag</h1>
+    <img width="300px" src="assets/image.jpeg" alt="Something Wrong">
+
+    <audio src="assets/audio.mp3" controls></audio>
+
+    <video src="assets/video.mp4" controls width="400px"></video>
+
+    <hr>
+
+    <!-- List are of two types : 
+        i. Ordered : ol : 1, A , a , I ,i
+        ii. Unordered  : ul : square , disc , circle
+
+        list item it is denoted by li tag
+    -->
+
+    <ol type="I" start="23">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <hr>
+
+    <!-- Table tag -->
+    <!-- 
+        cellspacing : space b/w outer cell & inner cell
+        cellpadding : space b/w content & cell
+    -->
+    <table border="1" cellspacing="0" cellpadding="30">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>1234</td>
+            <td>Neeraj</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>1235</td>
+            <td>Manoj</td>
+            <td>Meerut</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th colspan="5">Heading</th>
+        </tr>
+        <tr>
+            <th colspan="2">City</th>
+            <th rowspan="2">Qty</th>
+            <th colspan="2">Course</th>
+        </tr>
+        <tr>
+            <th>S.no</th>
+            <th>City Name</th>
+            <th>S.no</th>
+            <th>Course name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Delhi</td>
+            <td>90</td>
+            <td>1</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Noida</td>
+            <td>111</td>
+            <td>2</td>
+            <td>It</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <form>
+        <!-- for  : Linking our inout & label -->
+        <label for="rollno">Roll No :</label>
+        <input type="text" id="rollno">
+        <br>
+        <label for="">Student name :</label>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last name">
+        <br>
+        <label for="">Father Name :</label>
+        <input type="text">
+        <br>
+        <label for="">Date Of Birth :</label>
+        <input type="date">
+        <br>
+        <label for="">Mobile No :</label>
+        <input type="number">
+        <br>
+        <label for="">Email :</label>
+        <input type="email">
+        <br>
+        <label for="">Password :</label>
+        <input type="password">
+        <br>
+        <label for="">Gender :</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <br>
+        <label for="">Department : </label>
+        <input type="checkbox">CS
+        <input type="checkbox">It
+        <input type="checkbox">CIVIL
+        <br>
+        <label for="">Course :</label>
+        <select name="" id="">
+            <option value="">-----Select Your Course Name-----</option>
+            <option value="">CS</option>
+            <option value="">IT</option>
+            <option value="">CIVIL</option>
+            <option value="">EC</option>
+        </select>
+        <br>
+        <label for="">Upload Photo :</label>
+        <input type="file">
+        <br>
+        <label for="">City :</label>
+        <input type="text">
+        <br>
+        <label for="">Address :</label>
+        <textarea name="" id=""></textarea>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

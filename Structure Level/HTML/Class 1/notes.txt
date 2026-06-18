@@ -1,0 +1,15 @@
+What is ?
+Html is the HyperText Markup language , where we use tags & text to create the webpage
+
+We use .html extention
+
+Why we use meta?
+--> FOr Responsive Design.
+--> UTF-8 is used for encoding 
+--> For SEO
+
+Heading tags : h1 to h6
+Media tags
+List
+Table
+Form
