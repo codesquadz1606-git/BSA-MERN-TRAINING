@@ -1,0 +1,38 @@
+.hero-blob{
+    width: 280px;
+    height: 280px;
+
+    background: linear-gradient(135deg,orange,indigo);
+    border-radius: 41% 58% 67% 37%;
+
+    filter: blur(10px);
+    opacity: 0.9;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.floating-card{
+    position: absolute;
+    border-radius: 16px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    z-index: 2;
+    
+    animation: float 4s ease-in-out infinite;
+
+}
+
+.card-1{top: 30px; left: 10px; animation-delay: 0s;}
+.card-2{top: 130px; left: 240px; animation-delay: 1.4s;}
+.card-3{top: 230px; left: 10px; animation-delay: 2.4s;}
+
+@keyframes float {
+    0% , 100% {
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-16px);
+    }
+}

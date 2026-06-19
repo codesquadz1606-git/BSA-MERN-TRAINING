@@ -1,0 +1,24 @@
+Type of CSS : 
+    i. Inline'
+    ii. Internal
+    iii. External
+
+Which CSS has highest Priorty?
+
+What is Box Model?
+
+What is display?
+Inline : Conversion of block tag into inline tag.
+Block : Conversion of inline tag in to block tag.
+Inline-Block : At line 1 it is inline tag , as soon as text is at line 2 it is block tag.
+Flex : Felx works on one-dimensional , either row or column.
+Grid
+
+Pseudo Classes: 
+    i. :hover - Transition (atWhat time timing-function)
+    ii. :first-child()
+    iii. last-child
+
+Animation
+
+Linear Gradient (direction , color1, color2)

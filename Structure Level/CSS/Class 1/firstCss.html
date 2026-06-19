@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Internal CSS */
+
+    /* div{
+        color: blue;
+    } */
+
+    .box{
+        border: 2px dotted black;
+        /* padding: 30px; */
+
+        /* top-bottom left-right */
+        /* padding: 30px 50px; */
+
+        /* TOP RIGHT BOTTOM LEFT */
+        padding: 30px 0px 100px 50px;
+
+        /* margin: 30px; */
+
+        /* border-radius: 30px; */
+
+        /* top-left top-right bottom-right bottom-left */
+        border-radius: 30px 0px 30px 0px;
+    }
+
+    .container{
+        /* display: flex; */
+        /* gap: 30px; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-directi20: row-reverse;
+
+        flex-wrap: wrap; */
+
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(5,1fr); */
+        grid-template-columns: 1fr 300px 300px 1fr;
+
+        grid-template-rows: 500px 500px;
+    }
+
+    .c-1{
+        width: 200px;
+        height: 300px;
+        background-color: green;
+
+        transition: all ease-in 0.3s;
+    }
+
+    .c-1:hover{
+        background-color: blue;
+    }
+    .c-2{
+        width: 200px;
+        height: 300px;
+        background-color: red;
+    }
+    .c-3{
+        width: 200px;
+        height: 300px;
+        background-color: yellow;
+    }
+    .c-4{
+        width: 200px;
+        height: 300px;
+        background-color: blue;
+    }
+
+    /* .c:first-child{
+        background-color: brown;
+    }
+
+    .c:last-child{
+        background-color: black;
+    }
+
+    .c:nth-child(5){
+        background-color: blueviolet;
+    } */
+
+    .c:nth-child(even){
+        background-color: cadetblue;
+    }
+
+
+    .c:nth-child(odd){
+        background-color: beige;
+    }
+
+
+    .new{
+        width: 300px;
+        height: 300px;
+        /* background-color: red; */
+        /* background: linear-gradient(to right,red,blue); */
+        /* background: linear-gradient(to left,red,blue); */
+        /* background: linear-gradient(to top,red,blue); */
+        /* background: linear-gradient(to bottom,red,blue); */
+        
+        background: linear-gradient(115deg,red,blue,green,yellow);
+
+        /* animation: rotateBox 3s ease-in-out 2s infinite; */
+    }
+
+    /* @keyframes rotateBox{
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(90deg);
+            background-color: green;
+        }
+        50%{
+            transform: rotate(180deg);
+            background-color: yellow;
+        }
+        75%{
+            transform: rotate(270deg);
+            background-color: blue;
+        }
+        100%{
+            transform: rotate(360deg);
+            background-color: black;
+        }
+    } */
+</style>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="background-color: red;">Hello</h1>
+
+    <!-- <div style="color: green;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus unde explicabo quo temporibus quisquam magni voluptatum sequi architecto ea cum laborum odio, vel vero delectus! Atque ea necessitatibus fuga sequi, reprehenderit nulla beatae incidunt commodi culpa animi sit, odio et rerum numquam quos iure porro in dolore eveniet mollitia est aliquid obcaecati inventore sint! Exercitationem fugit, iure pariatur vero eius temporibus expedita libero illo quam consectetur adipisci quas, odio, quis dolor voluptatum deserunt similique ad dicta nobis vitae obcaecati eaque laudantium nam! Officiis est error eaque culpa, commodi illo optio pariatur tempora cumque doloribus quos totam perspiciatis beatae quam accusantium nulla. Repellendus modi ut laboriosam rerum est inventore, aspernatur eligendi odio illo expedita minus commodi accusamus amet consequatur labore tempora numquam voluptates accusantium! Placeat ut ducimus laborum incidunt unde doloremque in aut, nobis, exercitationem fugit recusandae, omnis deleniti beatae. Impedit rem, eligendi dicta nesciunt ipsam voluptatem eaque ducimus, quos vel odio veniam ipsa aut debitis voluptate nisi. Labore expedita voluptatum amet veritatis eveniet deleniti quas aliquam ipsa eaque consequuntur, cumque veniam sunt voluptatem eligendi et sequi architecto quidem! Cum eos placeat quas laudantium neque veritatis facilis nesciunt ut sapiente veniam sint, voluptate officia enim quidem ipsa excepturi rem aspernatur!
+    </div> -->
+
+    <div class="box">
+        Hello
+    </div>
+
+    <p style="background-color:  yellow; display: inline;">
+        hello
+    </p>
+
+    <span style="display: block; background-color: blue;">Hii</span>
+
+    <p style="display:inline-block ; background-color: green;">
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+        Ayush
+    </p>
+
+    <span>H</span>
+
+    <hr>
+
+    <div class="container">
+        <div class="c c-1"></div>
+        <div class="c c-2"></div>
+        <div class="c c-3"></div>
+        <div class="c c-4"></div>
+        <div class="c c-1"></div> 
+        <div class="c c-2"></div>
+        <div class="c c-3"></div>
+        <div class="c c-4"></div>
+        <div class="c c-1"></div>
+        <div class="c c-2"></div>
+        <div class="c c-3"></div>
+        <div class="c c-4"></div>
+    </div>
+
+    <!--  -->
+
+    <div class="new">
+
+    </div>
+</body>
+</html>
