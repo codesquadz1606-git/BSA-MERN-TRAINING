@@ -1,0 +1,17 @@
+TAILWIND CSS
+
+Shades : 50,100,200,300,400,500,600,700,800,900,950
+Backgrounds
+    bg-colorName-shade
+
+Box-Model
+    padding : p , pt(top) , pb(bottom) , ps(start) , pe(end) , py(top & bottom) , px(left & right)
+    margin : m , mt(top) , mb(bottom) , ms(start) , me(end) , my(top & bottom) , mx(left & right)
+
+sm,md,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,8xl,9xl
+Borders 
+
+
+hover:property
+
+flex
