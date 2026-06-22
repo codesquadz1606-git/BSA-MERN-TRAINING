@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-1{
+        width: 250px;
+        height: 250px;
+        background-color: red;
+    }
+    .box-2{
+        width: 250px;
+        height: 250px;
+        background-color: blue;
+    }
+    .box-3{
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+    }
+    .box-4{
+        width: 250px;
+        height: 250px;
+        background-color: green;
+    }
+
+    @media (min-width:1520px) {
+        .container{
+            gap: 150px;
+        }
+    }
+
+    @media (min-width:1280px) and (max-width:1519px) {
+        .container{
+            gap: 80px;
+        }
+    }
+
+    @media (min-width:900px) and (max-width:1279px) {
+        .container{
+
+            display: grid;
+            grid-template-columns: 450px 450px;
+            grid-template-rows: 300px 300px;
+        }
+
+        .box-1,.box-2,.box-3,.box-4{
+            display: flex;
+            width: 400px;
+        }
+    }
+
+    @media (min-width:476px) and (max-width:900px) {
+        .container{
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-1,.box-2,.box-3,.box-4{
+            width: 90%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+    </div>
+</body>
+</html>
