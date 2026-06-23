@@ -1,0 +1,4 @@
+Type of JS:
+Inline
+Internal 
+External

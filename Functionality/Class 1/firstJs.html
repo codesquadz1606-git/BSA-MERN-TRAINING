@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Inline JS -->
+    <!-- <button onclick="console.log('Button Clicked')">Click</button> -->
+
+    <script>
+        // Internal JS
+
+        // Variables : A container that store some value at the memory.
+        // a=10
+        // b=20
+        // c=30
+
+        // console.log("a,b,c") // this is considered as string
+        // console.log(a,b,c) // variable calling
+
+        // let a=10
+        // // let a=100; //error : because cannot re-declare
+        // a=100 // it can only re-intalize. 
+        // console.log(a)
+
+        // var b=20
+        // var b=200 // can re-declare
+        // b=2000; // can re-assign
+        // console.log(b)
+
+        // const c=30
+        // // cannot re-declare or re-assign
+
+        // // const c=300
+        // c=3000
+        // console.log(c)
+
+        // let a=100
+        // let b=100.56
+        // let c=true
+        // let d="Ayush123"
+        // let e;
+        // let f=null   
+
+
+        // prompt() : It returns us a string value
+
+
+        // let a=parseInt(prompt("Enter a"))
+        // let b=parseInt(prompt("Enter b"))
+
+        // console.log("Sum of",a,"&",b,"is",a+b)
+        // console.log(`Sum of ${a} & ${b} is ${a+b}`)
+
+        let num1 = 79
+        let num2 = 10
+
+        // Arthmetic
+        // console.log(num1+num2)
+        // console.log(num1-num2)
+        // console.log(num1*num2)
+        // console.log(num1/num2)
+        // console.log(num1%num2)
+        // console.log(num1**num2)
+
+        // Relational
+        // console.log(num1<num2)
+        // console.log(num1>num2)
+        // console.log(num1>=num2)
+        // console.log(num1<=num2)
+        // console.log(num1==num2)
+        // console.log(num1!=num2)
+
+        // let a=10;
+        // let b="10"
+        // console.log(a==b) // it only compare the value
+        // console.log(a===b) // it compare value as well as type.
+
+        // && :  Here all the condition must be true , for result true.\
+        // Real Scenario : Login & Signup Form
+        // let a = 10;
+        // let b = 13;
+        // let c = 21;
+
+        // console.log(a < b && b > c)
+
+        // || : Here if single condition is true , result is true.
+        // Mobile Fingerprints
+        // console.log(a < b || b > c)
+
+        // console.log(!(a < b || b > c))
+
+
+        let a = 10;
+        // let b = a++; // post increment
+        // let b = a--; // post decrement
+
+        // let b = ++a ; // pre increment
+        // let b = --a ; // pre decrement
+        // b=a
+
+        // a+=10 //a= a+10;
+        // a-=10
+        // a*=3
+
+        // console.log(a)
+        // console.log(b)
+
+        // Ternary Operator  :  condition?statement(true):statement(false)
+        // let age=21;
+        // (age>=19)?console.log("ELigible"):console.log("Not Eligible")
+
+        // Conditional Statement
+        // i. if , else-if , else
+        //  if is the starting statement , it can be used multiple times
+        //  else is the ending statement , it is used only single time
+
+        // if(condition){condition true}
+        // else{condition false}
+
+        // let age=21;
+        // if(age>=19){
+        //     console.log("Eligible")
+        // }
+        // else if(age>=14 && age<=18){ // additional Statement
+        //     console.log(`Eligible in ${19-age} years`)
+        // }
+        // else{
+        //     console.log("Not Eligible")
+        // }
+
+        // Switch Case
+        // Single Expression has multiple cases.
+
+        // Press 1 for React
+        // Press 2 for Node
+        // Press 3 for Express
+        // Press 4 for Mongo DB
+
+        // let buttonPressed=parseInt(prompt("Press the button"))
+        // switch(buttonPressed){
+        //     case 1: console.log("React")
+        //     break // after meeting the case it will get out of the swutch
+        //     case 2: console.log("Node")
+        //     break
+        //     case 3: console.log("Express")
+        //     break
+        //     case 4: console.log("Mongodb")
+        //     break
+        //     default : console.log("No Case found")
+        // }
+
+        // for loop
+        // for(let i=0;i<=20;i++){ // 0 0<=20(T) , 1 1<=20(T) ,2 ... 21 21<=20(F)loop exit
+        //     console.log(i)
+        // }
+        // console.log("Loop Finished")
+
+        // while loop
+        // let i=0;
+        // while(i<=20){
+        //     console.log(i);
+        //     i+=2;
+        // }
+
+        // do-while loop
+        // let i=1;
+        // do{
+        //     if(i%2==0){
+        //         console.log(i)
+        //     }
+        //     i++;
+        // }while(i<=20)
+
+        // let name="Ayush Srivastava"
+        // for (let char of name){
+        //     console.log(char)
+        // }
+
+        let arr=["one","two","three","four","five"]
+        for(let item of arr){
+            console.log(item)
+            for (let char of item){
+                console.log(char)
+            }
+        }
+    </script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
