@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // function greet(){
+        //     console.log("Good Morning Everyone");
+        // }
+
+        // greet()
+
+        // Parameter : The variable that are declared inside the function scope.
+
+        // function add(a,b){
+        //     console.log(a+b)
+
+        //     // return keyword : That returns the value to the function itself.
+        //     return a+b
+        // }
+
+        // Argument : The values that are passed in calling function inside their scope.
+        // add(10,20)
+        // add(20,40)
+
+
+        // function info(name,city="Mathura"){
+        //     console.log(name,city)
+        // }
+
+        // info("Shivam Gupta")
+
+        // info("Harish","Gurgaon")
+
+        // let product=function(a,b){
+        //     return a*b;
+        // }
+
+        // let product=(a,b)=>{
+        //     return a*b;
+        // }
+
+        // console.log(product(10,4))
+
+
+        // Array : It is our first data structure where data is stored in continous memory allocation of any data type.
+
+        // let arr=[10,20,30,"Ayush",true,undefined]
+        
+        // arr.push(1000) // adding at the end
+        // arr.pop() // remove from the end
+        // arr.shift() // remove from start
+        // arr.unshift(2000) // add from the starting
+
+        // console.log(arr)
+        // arr.splice(1,5,"Shivam","Navesh") // add & remove 
+        // arr.splice(1,2) // only remove
+        // arr.splice(1,0,"Ayush") // only add
+        // console.log(arr)
+
+        // slice(start,end-1);
+        // console.log(arr.slice(0,4)) // cutting some part of array.
+
+        // let newArr=[10,10,11,2,200,3,500,400];
+        // console.log(newArr.sort().reverse()) // method Chaining
+
+        // let combine=arr.concat(newArr)
+        // console.log(combine)
+
+        // Callback : A function inside another function waiting for execution.
+        // arr.map((el)=>{
+        //     console.log(el)
+        // })
+
+        // let newArr=[10,3,7,12,34,45,98,101,304,409];
+        // let filterArr=newArr.filter((el)=> el%2==0);
+        // let filterArr=newArr.filter((el)=>{ return el%2==0});
+
+        // console.log(filterArr)
+
+        // let sum=newArr.reduce((acc,el)=>{
+        //     acc=acc+el
+        //     return acc
+        // },0)
+
+        // console.log(sum)
+
+        // function printAll(...args){ // rest : for accepting multiple arguments we use this.
+        //     console.log(args);
+        // }
+
+        // let n=[...newArr,"Ayush","Shubham"]
+        // console.log(n)
+
+        // newArr=[...newArr,"Ayush","Shubham"]
+        // console.log(newArr)
+
+        // Objects
+        // let obj={
+        //     name:"Shubham",
+        //     age:32,
+        //     city:"Noida"
+        // }
+
+        // console.log(obj)
+
+        // How to access the value of the object?
+        // Method 1 : using objname.keyname
+        // console.log(obj.name)
+
+        // Method 2 : using objname["keyname"]
+        // console.log(obj["city"])
+
+        // Objects of object
+        // let info={
+        //     name:"Kartik",
+        //     skills:{
+        //         skill1:"React",
+        //         skill2:"Next Js",
+        //         skill3:"Fastify"
+        //     }
+        // }
+
+        // console.log(info.skills.skill3)
+        // console.log(info["skills"]["skill3"])
+
+        // let arrObj=[
+        //     {
+        //         name:"Harshit",
+        //         city:"Delhi",
+        //         age:25
+        //     },
+        //     {
+        //         name:"Kamal",
+        //         city:"Noida",
+        //         age:34
+        //     },
+        //     {
+        //         name:"Gautam",
+        //         city:"Gurgaon",
+        //         age:26
+        //     }
+        // ]
+
+        // console.log(arrObj)
+
+        // info["age"]=25 // here the key does not exist : add
+        // info["name"]="Lakshay" // here key exist : update
+
+        // delete info.age; // for deleting any key.
+
+        // console.log(info)
+
+
+        // Destructuring Array & Object
+        // let arr=["Ayush","Noida","MERN"];
+        // let [name,city,technology]=arr; // destructuring
+        // let [name,...others]=arr;
+        
+        // console.log(name)
+        // console.log(others)
+        // console.log(city)
+        // console.log(technology)
+
+        // let info={
+        //     canname:"Kartik",
+        //     age:25,
+        //     city:"Gurgaon",
+        //     tech:".net"
+        // }
+
+        // let {canname,tech,...othersInfo}=info
+        // console.log(canname)
+        // console.log(tech)
+        // console.log(othersInfo)
+
+
+        // Shallow Copy : Shallow copy only copies element of first level without any refernce, nested elements are copied on refernce.
+        // let arr=[10,20,30,40,50,[60,70,80]]
+        // let copyArr=arr; // sothis is copied on a refernce.
+        // let copyArr=[...arr] // here the refernce of element has not copied.
+
+        // let copyArr=JSON.parse(JSON.stringify(arr)); // deep copy : Where first level as well as nested level are copied without any previous refernce.
+
+        // copyArr[3]=400 
+        // copyArr[5][0]=600
+
+        // console.log("Copy:",copyArr)
+        // console.log("Orignal:",arr)
+
+
+        // Synchronous: When code is executed line by line so that is Synchronous.
+        // console.log("hello")
+        // console.log("hii")
+        // console.log("how are you")
+
+        // Asynchronous : When their is some wait time in our code so i.e Asynchronous. setTimeout() setInterval() Api Calls , promises.
+        console.log("Hello")
+
+        setTimeout(()=>{ // asynchronous call which is handled by browser.
+            console.log("I am async")
+        },3000)
+
+        console.log("How are you?")
+    </script>
+</body>
+</html>
