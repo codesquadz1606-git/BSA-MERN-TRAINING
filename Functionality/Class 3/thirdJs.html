@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 400px;
+        height: 400px;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="box"></div>
+
+
+    <script>
+        // CallBack Hell
+        // function dataSave(data,success,failure){
+        //     let internetSpeed=Math.ceil(Math.random()*10)
+        //     // console.log(internetSpeed)
+        //     if(internetSpeed>4){
+        //         success(internetSpeed)
+        //     }
+        //     else{
+        //         failure(internetSpeed)
+        //     }
+        // }
+
+        // dataSave("Jatin",(s)=>{
+        //     console.log("Data 1 Saved",s);
+        //     dataSave("Rahul",(s)=>{
+        //         console.log("Data 2 Saved",s)
+        //         dataSave("Nidhi",(s)=>{
+        //             console.log("data 3 Saved",s)
+        //         },(s)=>{
+        //             console.log("Less internet speed",s)
+        //         })
+        //     },(s)=>{
+        //         console.log("Less internet speed",s)
+        //     })
+        // },(s)=>{
+        //     console.log("Less internet speed",s)
+        // })
+
+        // Promises
+        function dataSave(data){
+            return new Promise((res,rej)=>{
+                let internetSpeed=Math.ceil(Math.random()*10)
+                // console.log(internetSpeed)
+                if(internetSpeed>4){
+                    res("Data Saved")
+                }
+                else{
+                    rej("Less internet speed")
+                }
+            })
+        }
+
+        // then() & catch() used to handle the promises response
+
+        // dataSave("Jatin") // promise
+        // .then(()=>{
+        //     console.log("data 1 saved")
+        //     return dataSave("Himanshu") // promise
+        // })
+        // .then(()=>{
+        //     console.log("data 2 saved")
+        //     return dataSave("Nidhi")
+        // })
+        // .then(()=>{
+        //     console.log("data 3 saved")
+        // })
+        // .catch(()=>{ // it is ued single time , all the errors can handle single catch.
+        //     console.log("Less internet speed")
+        // })
+
+        // Async & Await
+        //  async function greet(){
+            
+        //     await console.log("hello")
+        // }
+
+        // await helps us to handle the promise , but used only if parent uses async.
+
+        // async function allCalls(){
+        //     await dataSave("Jatin")
+        //     await dataSave("Himanshu")
+        //     await dataSave("Nidhi")
+        // }
+
+        // allCalls()
+
+        let box=document.querySelector(".box")
+
+        function colorChange(color,time){
+            return new Promise((res,rej)=>{
+                setTimeout(()=>{
+                    res()
+                    box.style.backgroundColor=color
+                },time)
+            })
+        }
+
+        // async function allColorCalls(){
+        //     await colorChange("red",2000)
+        //     await colorChange("blue",2000)
+        //     await colorChange("green",2000)
+        //     await colorChange("yellow",2000)
+        //     await colorChange("black",2000)
+        // }
+        // allColorCalls()
+
+        let url="https://catfact.ninja/fact"
+        fetch(url) // it s used to handle the api , it is a promise
+        .then((res)=>{
+            console.log(res)
+            return res.json() // promise
+        })
+        .then((data)=>{
+            console.log(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    </script>
+</body>
+</html>
+
