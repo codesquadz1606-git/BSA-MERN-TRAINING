@@ -1,0 +1,33 @@
+React : 
+    Installation
+    Step 1: Download node js
+    Step 2: Open folder on VSCode 
+    Step 3: Run command : npm create vite@latest
+
+        if faliure in step 3 , right click on windows --> open terminal (admin) --> Set-ExecutionPolicy RemoteSigned --> close & reopen
+
+    Step 4: npm install : node_modules
+    Step 5: npm run dev : to go live
+
+JSX : Javascript Extensible.(HTML+JS)
+
+import : to use any component we have to import that component.
+
+export : Exporting our own component to use in differnt files
+    i. default : It is applied only on one component in a file
+    ii. named : It can be multiple
+
+Component : 
+    Class Component (beacause lengthy syntax , hard to understand.)
+    Functional Component : easy to understand & less syntax.
+
+React Pillars:
+    State : To manage the data of the component.
+    Props
+    Hooks
+
+What is Conditional Rendering?
+What is wrapper element?
+variable/opertion && component/data
+
+What is Props?
