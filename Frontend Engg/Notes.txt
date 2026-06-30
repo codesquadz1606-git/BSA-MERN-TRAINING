@@ -31,3 +31,6 @@ What is wrapper element?
 variable/opertion && component/data
 
 What is Props?
+
+CLass 2:
+What is form?
