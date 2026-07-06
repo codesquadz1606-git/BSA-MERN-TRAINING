@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: beige;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+.outer{
+    width: 350px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50px;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.price_cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
