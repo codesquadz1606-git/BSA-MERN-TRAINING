@@ -14,7 +14,7 @@ const server=http.createServer((req,res)=>{
         return res.end(JSON.stringify(users));
     }
 
-    else if(req.url==="/users" && req.method==="POST"){
+    if(req.url==="/users" && req.method==="POST"){
         let body=""; // string
         req.on("data",chunk => {
             body+=chunk;
@@ -29,10 +29,10 @@ const server=http.createServer((req,res)=>{
             res.writeHead(201,{
                 'Content-type':'application/json'
             });
-            res.end({
+            res.end(JSON.stringify({
                 message:"Data Created",
                 data : users
-            });
+            }));
         })
 
         return;
