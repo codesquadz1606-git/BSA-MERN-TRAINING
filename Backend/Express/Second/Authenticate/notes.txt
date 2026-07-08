@@ -1,0 +1,10 @@
+instagram use --> user_name & password (Authentication)
+Authorization : Permission Grants
+
+jsonwebtoken
+bcrypt
+
+rbac : role based archeiture
+/super-admin
+/admin
+/user
