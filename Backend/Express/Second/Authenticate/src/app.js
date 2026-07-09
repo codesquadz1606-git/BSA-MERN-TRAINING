@@ -1,11 +1,13 @@
 const express=require("express");
 const app=express();
-const userRoutes=require("./router/user.routes");
+const authRoutes=require("./router/user.routes");
+const userRoutes=require("./router/user1.routes")
 const dbConnect = require("./config/db");
 
 dbConnect()
 
 app.use(express.json())
-app.use("/api/auth",userRoutes);
+app.use("/api/auth",authRoutes);
+app.use("/api",userRoutes);
 
 module.exports=app;
